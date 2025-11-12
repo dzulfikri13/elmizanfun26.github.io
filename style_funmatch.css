@@ -1,0 +1,29 @@
+:root{
+  --bg1:#07122a;
+  --bg2:#0b1a34;
+  --card: rgba(255,255,255,0.05);
+  --gold:#f9d65c;
+  --accent:#ff9a2e;
+  --muted:#cdd6ec;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg2),#0e274a 65%);
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.wrap{max-width:980px;margin:0 auto;padding:28px 20px 80px}
+.top{display:flex;gap:18px;align-items:center;justify-content:space-between;}
+.brand{display:flex;gap:14px;align-items:center;}
+.brand img{width:72px;height:72px;object-fit:contain;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.35)}
+.title h1{margin:0;font-size:20px;color:var(--gold);letter-spacing:0.6px}
+.title p{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+/* ...lanjut semua CSS sama seperti di HTML... */
+
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.995)}to{opacity:1;transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
